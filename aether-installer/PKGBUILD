@@ -1,0 +1,21 @@
+# Maintainer: you
+pkgname=aether-installer
+pkgver=0.2
+pkgrel=1
+pkgdesc="Aether Linux installer (Qt6/QML prototype)"
+arch=('x86_64')
+license=('custom')
+depends=('qt6-base' 'qt6-declarative' 'util-linux' 'polkit' 'rsync' 'arch-install-scripts' 'gptfdisk' 'dosfstools' 'btrfs-progs')
+makedepends=('cmake' 'ninja' 'gcc')
+# Build from the local checkout: run `makepkg -si` in this folder.
+source=()
+
+build() {
+    cmake -S "$startdir" -B build -G Ninja \
+        -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+    cmake --build build
+}
+
+package() {
+    DESTDIR="$pkgdir" cmake --install build
+}

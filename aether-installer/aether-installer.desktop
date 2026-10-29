@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Aether Installer
+Comment=Install Aether Linux
+Exec=aether-installer
+Icon=aether-installer
+Terminal=false
+Categories=System;
