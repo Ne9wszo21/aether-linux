@@ -22,7 +22,7 @@ aether, based on arch linux, begginer friendly ui and bloat free.
 requirements: a UEFI system and at least 8 GB of free disk space and 2GB of ram. (BIOS coming soon.)
 
 ```sh
-# 1. Write the ISO to a USB stick (replace /dev/sdX, this erases it)
-sudo dd if=aether.iso of=/dev/sdX bs=4M status=progress
-
+#write the iso with rufus, ventoy, woeusb-ng or balenaetcher then open a terminal by CTRL+ALT+T then type:
+sudo aether-installer
+#it should open a window.
 ```
