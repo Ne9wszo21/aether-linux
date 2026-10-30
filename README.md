@@ -26,3 +26,9 @@ requirements: a UEFI system and at least 8 GB of free disk space and 2GB of ram.
 sudo aether-installer
 #it should open a window.
 ```
+
+## licenses
+aether or "Aether Linux" licensed under the GNU General Public License v3.0.
+   
+This project has no affiliates and/or promoted with/by Arch Linux
+
